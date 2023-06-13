@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+}
+
+.bg-header {
+  background-color: rgb(13, 164, 139);
+}
+
+.bg-sec {
+    background-color: #002d5e;
+}
+
+.text-prime {
+  color: #1ba9be !important;
+}
+.bg-2{
+  background-color:#7bffe9 !important;
+
+}
+.border-prime {
+  border-color:#1ba9be !important;
+}
+
+.bg-blue {
+  background-color: rgb(5, 5, 90);
+}
+
+.full-page {
+  height: 100vh; 
+}
+
+$font-size-start: 10; // Starting font size
+$font-size-end: 40; // Ending font size
+
+@for $i from $font-size-start through $font-size-end {
+  $font-size: $i * 1px;
+  .fs-#{$i} {
+    font-size: $font-size;
+  }
+}
+
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+    border-color: #fff !important;
+}
+
+$min-width: 10;
+$max-width: 400;
+
+@for $i from $min-width through $max-width {
+  .wd-#{$i} {
+    width: #{$i}px;
+  }
+}

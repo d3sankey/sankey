@@ -1,0 +1,79 @@
+.main-label {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.custom-switch {
+  display: none;
+}
+
+.switch-label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #219653; /* Deep green color */
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch-label:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: #ffffff; /* White color for switch button */
+  transition: left 0.3s;
+}
+
+.custom-switch:checked + .switch-label {
+  background-color: #135529; /* Darker shade of green when switch is checked */
+}
+
+.custom-switch:checked + .switch-label:before {
+  left: calc(100% - 18px); /* Move switch button to the right when checked */
+}
+
+.info-section {
+  display: inline-block;
+}
+
+.info-icon {
+  color: orange; /* Blue color for the icon, adjust as needed */
+  margin-right: 5px;
+}
+
+.info-title {
+  padding-bottom: 4px;
+  border-bottom: 1.3px solid #96e2e5;
+}
+
+.head-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    margin-left: 10px;
+    border: 1px solid #007ea9;
+    border-radius: 40px;
+    padding: 4px 20px;
+    color:#007ea9;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  span:hover{
+    background-color: #00d600;
+    color:rgb(0, 0, 112);
+    border:1px solid #00d600; 
+    transition: 500ms;
+  }
+  span.select{
+    background-color: #00d600;
+    color:rgb(0, 0, 112);
+    border:1px solid #00d600; 
+    transition: 500ms;
+  }
+}

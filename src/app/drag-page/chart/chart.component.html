@@ -1,0 +1,97 @@
+<div class="row bg-sec">
+    <div class="col">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center text-white p-3 fs-12">
+                <p class="m-0">File Name</p>
+                <span class="mx-3">BoM examplr123.xl</span>
+                <button class="btn btn-outline-primary text-prime fs-11 border-prime rounded-0">
+                    Export
+                </button>
+            </div>
+            <div class="d-flex align-items-center text-white p-3 fs-12">
+                <span>Select system</span>
+                <div class="head-label">
+                    <span> Product</span>
+                    <span> Energy</span>
+                    <span class="select"> Overall</span>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-end wd-200"   > 
+                <i class=" far fa-check-circle text-white mx-2" ></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-3">
+    <div class="row">
+        <div class="col d-flex align-items-center justify-content-between">
+            <span class="fs-14 bg-2 main-label py-1 px-2">
+                Circularity Index of smartity :
+                <span class="fs-16 fw-bold">34.3 % </span> <span class="mx-4"></span>
+            </span>
+            <div class="d-flex align-items-center">
+                <span class="fs-13 mx-2">Table View</span>
+                <input type="checkbox" id="mySwitch" class="custom-switch" />
+                <label for="mySwitch" class="switch-label"></label>
+                <span class="fs-13 mx-2">Graph View</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card my-2 p-3 rounded-0">
+                <div>
+                    <span class="fs-14 bg-2 main-label py-1 px-2">
+                        Product <span class="fs-16 fw-bold">28.3 % </span>
+                        <span class="mx-4"></span>
+                    </span>
+                </div>
+                <div class="row px-2">
+                    <div class="col-4">
+                        <div class="pr-0">
+                            <div class="chart-tite">
+                                <div class="info-section p-2">
+                                    <span class="info-icon"><i class="fas fa-boxes fs-16"></i></span>
+                                    <span class="info-title fs-12">Information <i class="far fa-info-circle"></i></span>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col pl-0">
+                                        <div class="card">
+                                            <dataviz-sankey [data]="facilityData" [rotate]="false"></dataviz-sankey>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class=" ">
+                            <div class="chart-tite">
+                                <div class="row justify-content-between">
+                                    <div class="col info-section p-2">
+                                        <span class="info-icon"><i class="fas fa-window-maximize"></i></span>
+                                        <span class="info-title fs-12">Breakdoen Of Mass <i
+                                                class="far fa-info-circle"></i></span>
+                                    </div>
+                                    <div class="col info-section p-2 ml-auto">
+                                        <span class="info-icon"><i class="fas fa-boxes fs-16"></i></span>
+                                        <span class="info-title fs-12">Information <i
+                                                class="far fa-info-circle"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col pl-0">
+                                        <div class="card">
+                                            <dataviz-sankey [data]="facilityData" [rotate]="false"></dataviz-sankey>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
